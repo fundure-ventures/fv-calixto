@@ -8,6 +8,8 @@ primary_region = 'ams'
 
 [build]
   dockerfile = "Dockerfile"
+  [build.args]
+    OPENCLAW_DOCKER_APT_PACKAGES = "vim"
 
 [env]
   NODE_ENV = "production"
