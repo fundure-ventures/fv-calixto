@@ -14,7 +14,10 @@ primary_region = 'ams'
 [env]
   NODE_ENV = "production"
   OPENCLAW_PREFER_PNPM = "1"
+  #session related config, approved devices, etc
   OPENCLAW_STATE_DIR = "/data"
+  # node home dir, where openclaw stores memory files
+  HOME = "/data/home"
   NODE_OPTIONS = "--max-old-space-size=1536"
   OPENCLAW_GATEWAY_PORT = "3000"
 
