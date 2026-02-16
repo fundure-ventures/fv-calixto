@@ -10,6 +10,8 @@ primary_region = 'ams'
   dockerfile = "Dockerfile"
   [build.args]
     OPENCLAW_DOCKER_APT_PACKAGES = "vim"
+    # To edit config as node user (avoids permission issues):
+    # su -s /bin/bash node -c "vim /data/openclaw.json"
 
 [env]
   NODE_ENV = "production"
