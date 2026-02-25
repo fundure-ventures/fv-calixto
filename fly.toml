@@ -40,10 +40,6 @@ primary_region = 'ams'
   size = "shared-cpu-2x"
   memory = "2048mb"
 
-[[mounts]]
+[mounts]
   source = "openclaw_data"
   destination = "/data"
-
-[[mounts]]
-  source = "openclaw_repos"
-  destination = "/repos"
